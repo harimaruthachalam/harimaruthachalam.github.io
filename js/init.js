@@ -11,8 +11,8 @@
 ------------------------------------------------------ */
 
     setTimeout(function() {
-	   $('h1.responsive-headline').fitText(1, { minFontSize: '40px', maxFontSize: '90px' });
-	 }, 100);
+	   $('h1.responsive-headline').fitText(1, { minFontSize: '30px', maxFontSize: '70px' });
+	 }, 50);
 
 
 /*----------------------------------------------------*/
@@ -161,7 +161,7 @@
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
+               $('#message-success').fadeIn();
             }
             // There was an error
             else {
@@ -178,11 +178,3 @@
 
 
 });
-
-
-
-
-
-
-
-
