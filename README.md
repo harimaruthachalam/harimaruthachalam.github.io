@@ -1,3 +1,3 @@
-## Welcome to GitHub Pages
+# Hari's Website
 
-You can use the [editor on GitHub](https://github.com/harimaruthachalam/harimaruthachalam.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This repository contains Markup languages for website hosted in [https://harimaruthachalam.github.io/](https://harimaruthachalam.github.io/).
