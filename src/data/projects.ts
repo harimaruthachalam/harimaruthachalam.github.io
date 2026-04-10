@@ -4,6 +4,7 @@
  * experience bullets as standalone case studies.
  *
  * Order matters: shown top-to-bottom on the home page.
+ * Sorted strictly by `year` descending (newest first).
  */
 
 export interface Project {
@@ -12,7 +13,7 @@ export interface Project {
   name: string;
   /** Where this happened — company / lab */
   context: string;
-  /** Year(s) — used for ordering and the small date label */
+  /** End year of the work (single year, no ranges, for a clean timeline) */
   year: string;
   /** One-line problem statement */
   problem: string;
@@ -31,7 +32,7 @@ export const projects: Project[] = [
     id: "edge-collision",
     name: "Real-time collision classification on the edge",
     context: "Netradyne",
-    year: "2023–25",
+    year: "2025",
     problem:
       "Detect potential collisions from inertial and visual streams within the latency budget of an in-cab edge device.",
     solution:
@@ -66,6 +67,22 @@ export const projects: Project[] = [
     stack: ["BERT", "Transformers", "PU Learning", "Python"],
   },
   {
+    id: "blink-bci",
+    name: "Single-channel eye-blink BCI on Android",
+    context: "IIT Madras",
+    year: "2020",
+    problem:
+      "Open a communication channel for users with speech and movement limitations using only a remote single-channel EEG.",
+    solution:
+      "Android app that classifies intentional eye-blink patterns from raw EEG and translates them into speech.",
+    outcome: "Published at Interspeech 2018 (Hyderabad).",
+    stack: ["EEG", "BCI", "Android", "Java"],
+    link: {
+      label: "Interspeech 2018 paper",
+      url: "https://www.isca-speech.org/archive/Interspeech_2018/pdfs/3019.pdf",
+    },
+  },
+  {
     id: "eeg-dtw",
     name: "Dynamic time warping for EEG artifact classification",
     context: "IIT Madras",
@@ -79,22 +96,6 @@ export const projects: Project[] = [
     link: {
       label: "EMBC 2019 paper",
       url: "https://doi.org/10.1109/EMBC.2019.8856669",
-    },
-  },
-  {
-    id: "blink-bci",
-    name: "Single-channel eye-blink BCI on Android",
-    context: "IIT Madras",
-    year: "2018–20",
-    problem:
-      "Open a communication channel for users with speech and movement limitations using only a remote single-channel EEG.",
-    solution:
-      "Android app that classifies intentional eye-blink patterns from raw EEG and translates them into speech.",
-    outcome: "Published at Interspeech 2018 (Hyderabad).",
-    stack: ["EEG", "BCI", "Android", "Java"],
-    link: {
-      label: "Interspeech 2018 paper",
-      url: "https://www.isca-speech.org/archive/Interspeech_2018/pdfs/3019.pdf",
     },
   },
 ];
