@@ -1,6 +1,6 @@
 # Srihari Maruthachalam
 
-> Data scientist and machine learning researcher. Most recently **Staff Data Scientist at Netradyne, Bengaluru (Jun 2022 – Jun 2025)**, where he led real-time edge ML for fleet safety. Earlier work includes healthcare NLP at ZS Associates and brain–computer interface research at the Indian Institute of Technology, Madras (where he holds an MS by Research in Computer Science and Engineering, advised by Prof. Hema A. Murthy). Author of peer-reviewed work at IEEE EMBC and Interspeech. Site: https://harimaruthachalam.github.io.
+> Data scientist and machine learning researcher. Most recently **Staff Data Scientist at Netradyne, Bengaluru (Jun 2022 – Jun 2025)**, where he led real-time edge ML for fleet safety. Earlier work includes healthcare NLP at ZS Associates and brain–computer interface research at the Indian Institute of Technology, Madras (where he holds an MS by Research in Computer Science and Engineering, advised by [Prof. Hema A. Murthy](https://www.cse.iitm.ac.in/~hema/)). Author of peer-reviewed work at IEEE EMBC and Interspeech. Site: https://harimaruthachalam.github.io.
 
 Srihari Maruthachalam (`@harimaruthachalam` on GitHub) builds and ships production machine learning systems. He works end to end — from problem framing to edge deployment — with a bias toward models that hold up in production rather than just on a leaderboard. His work has measurably improved fleet safety (a 67% reduction in driver distraction at Netradyne), reduced carbon emissions (an estimated ~150 tons of CO₂ avoided per month from a single idling-detection model), and outperformed XGBoost and LSTM baselines by ~17 points of AUPRC on a rare-disease diagnosis task at ZS Associates.
 
@@ -36,8 +36,8 @@ Machine learning, deep learning, edge inference, real-time systems, signal proce
 
 ## Publications
 
-- Maruthachalam, S., Kumar, M.G., Murthy, H.A. **Time Warping Solutions for Classifying Artifacts in EEG.** 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 2019, pp. 4537–4540. https://doi.org/10.1109/EMBC.2019.8856669
-- Maruthachalam, S., Aggarwal, S., Kumar, M.G., Sur, M., Murthy, H.A. **Brain–Computer Interface using Electroencephalogram Signatures of Eye Blinks.** Proc. Interspeech 2018, pp. 1059–1060. https://www.isca-speech.org/archive/Interspeech_2018/pdfs/3019.pdf
+- **Srihari Maruthachalam**, [Mari Ganesh Kumar](https://mariganeshkumar.github.io/), [Hema A. Murthy](https://www.cse.iitm.ac.in/~hema/). **Time Warping Solutions for Classifying Artifacts in EEG.** 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 2019, pp. 4537–4540. https://doi.org/10.1109/EMBC.2019.8856669
+- **Srihari Maruthachalam**, [Sidharth Aggarwal](https://in.linkedin.com/in/asidharth019), [Mari Ganesh Kumar](https://mariganeshkumar.github.io/), [Mriganka Sur](https://bcs.mit.edu/directory/mriganka-sur), [Hema A. Murthy](https://www.cse.iitm.ac.in/~hema/). **Brain–Computer Interface using Electroencephalogram Signatures of Eye Blinks.** Proc. Interspeech 2018, pp. 1059–1060. https://www.isca-speech.org/archive/Interspeech_2018/pdfs/3019.pdf
 
 ## Detail
 

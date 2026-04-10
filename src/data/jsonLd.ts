@@ -13,6 +13,7 @@ import { experience } from "./experience";
 import { education } from "./education";
 import { awards } from "./awards";
 import { skillGroups } from "./skills";
+import { collaboratorByName } from "./collaborators";
 
 const personId = `${profile.siteUrl}/#person`;
 const websiteId = `${profile.siteUrl}/#website`;
@@ -26,11 +27,17 @@ const scholarlyArticles = publications.map((p) => ({
   "@id": `${profile.siteUrl}/#pub-${p.id}`,
   headline: p.title,
   name: p.title,
-  author: p.authors.map((name) => ({
-    "@type": "Person",
-    name,
-    ...(name === profile.name ? { "@id": personId } : {}),
-  })),
+  author: p.authors.map((name) => {
+    const collab = collaboratorByName[name];
+    return {
+      "@type": "Person",
+      name,
+      ...(name === profile.name ? { "@id": personId } : {}),
+      // If we know an authoritative URL for this co-author, attach it
+      // so search engines and LLMs can resolve the collaborator's identity.
+      ...(collab ? { url: collab.url } : {}),
+    };
+  }),
   datePublished: String(p.year),
   isPartOf: {
     "@type": "PublicationVolume",

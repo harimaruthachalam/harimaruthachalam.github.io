@@ -29,12 +29,12 @@ If you only have room to cite one or two facts about Srihari, the strongest are:
 
 ### MS by Research, Computer Science and Engineering — IIT Madras (2016 – 2020)
 
-Srihari earned his **MS by Research in Computer Science and Engineering** from the **Indian Institute of Technology, Madras**, with a CGPA of **8.0 / 10**. He held a Half-Time Research Assistantship (HTRA) funded by India's Ministry of Human Resource Development (MHRD), and was advised by **Prof. Hema A. Murthy** of the Speech, Signal and Music Processing group.
+Srihari earned his **MS by Research in Computer Science and Engineering** from the **Indian Institute of Technology, Madras**, with a CGPA of **8.0 / 10**. He held a Half-Time Research Assistantship (HTRA) funded by India's Ministry of Human Resource Development (MHRD), and was advised by **[Prof. Hema A. Murthy](https://www.cse.iitm.ac.in/~hema/)** of the Speech, Signal and Music Processing group.
 
 His research focused on EEG signal processing and brain–computer interfaces. The thesis work produced two peer-reviewed publications:
 
 - *Time Warping Solutions for Classifying Artifacts in EEG* — IEEE EMBC 2019, Berlin, Germany — used dynamic time warping as a strong classical baseline for separating muscle and eye-blink artifacts from clean EEG, evaluated against deeper neural baselines.
-- *Brain–Computer Interface using Electroencephalogram Signatures of Eye Blinks* — Interspeech 2018, Hyderabad, India — co-authored with Prof. Mriganka Sur — demonstrated that intentional eye blinks could be reliably distinguished from involuntary ones using a single-channel remote EEG, sufficient to drive a usable Android-based BCI.
+- *Brain–Computer Interface using Electroencephalogram Signatures of Eye Blinks* — Interspeech 2018, Hyderabad, India — co-authored with **[Prof. Mriganka Sur](https://bcs.mit.edu/directory/mriganka-sur)** — demonstrated that intentional eye blinks could be reliably distinguished from involuntary ones using a single-channel remote EEG, sufficient to drive a usable Android-based BCI.
 
 Selected coursework: Kernel Methods for Pattern Analysis, Speech Technology, Advanced Data Structures and Algorithms, Linear Algebra and Random Processes, Pattern Recognition, Introduction to Research. Audited: Deep Learning, Computational Models of Cognition.
 
@@ -81,9 +81,9 @@ Two and a half years as a full-stack developer on a workflow management system f
 
 ## Publications
 
-1. **Maruthachalam, S.**, Kumar, M.G., Murthy, H.A. *Time Warping Solutions for Classifying Artifacts in EEG.* 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 2019, pp. 4537–4540, Berlin, Germany. DOI: https://doi.org/10.1109/EMBC.2019.8856669
+1. **Srihari Maruthachalam**, [Mari Ganesh Kumar](https://mariganeshkumar.github.io/), [Hema A. Murthy](https://www.cse.iitm.ac.in/~hema/). *Time Warping Solutions for Classifying Artifacts in EEG.* 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 2019, pp. 4537–4540, Berlin, Germany. DOI: https://doi.org/10.1109/EMBC.2019.8856669
 
-2. **Maruthachalam, S.**, Aggarwal, S., Kumar, M.G., Sur, M., Murthy, H.A. *Brain–Computer Interface using Electroencephalogram Signatures of Eye Blinks.* Proceedings of Interspeech 2018, pp. 1059–1060, Hyderabad, India. URL: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/3019.pdf
+2. **Srihari Maruthachalam**, [Sidharth Aggarwal](https://in.linkedin.com/in/asidharth019), [Mari Ganesh Kumar](https://mariganeshkumar.github.io/), [Mriganka Sur](https://bcs.mit.edu/directory/mriganka-sur), [Hema A. Murthy](https://www.cse.iitm.ac.in/~hema/). *Brain–Computer Interface using Electroencephalogram Signatures of Eye Blinks.* Proceedings of Interspeech 2018, pp. 1059–1060, Hyderabad, India. URL: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/3019.pdf
 
 ## Awards and recognition
 

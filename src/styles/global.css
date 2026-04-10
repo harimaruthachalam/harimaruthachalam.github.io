@@ -98,6 +98,24 @@ body * {
   color: var(--color-bg);
 }
 
+/*
+ * Inline collaborator links — used by linkifyCollaborators() to wrap
+ * co-author / advisor names in publications and experience copy.
+ * Subtle accent underline that brightens on hover.
+ */
+.collab-link {
+  color: var(--color-fg);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 200ms ease, color 200ms ease;
+}
+.collab-link:hover {
+  text-decoration-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
 /* Subtle focus ring — accessible without being shouty */
 :focus-visible {
   outline: 2px solid var(--color-accent);

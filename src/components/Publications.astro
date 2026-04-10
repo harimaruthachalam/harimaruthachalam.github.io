@@ -1,6 +1,7 @@
 ---
 import { publications } from "../data/publications";
 import { profile } from "../data/profile";
+import { collaboratorByName } from "../data/collaborators";
 
 const scholarUrl = profile.socials.find((s) => s.icon === "scholar")?.url;
 ---
@@ -37,16 +38,29 @@ const scholarUrl = profile.socials.find((s) => s.icon === "scholar")?.url;
               {p.title}
             </h3>
             <p class="mt-3 text-sm text-[var(--color-fg-muted)]">
-              {p.authors.map((a, i) => (
-                <span>
-                  {a === "Srihari Maruthachalam" ? (
-                    <span class="text-[var(--color-fg)]">{a}</span>
-                  ) : (
-                    a
-                  )}
-                  {i < p.authors.length - 1 && ", "}
-                </span>
-              ))}
+              {p.authors.map((a, i) => {
+                const collab = collaboratorByName[a];
+                const isMe = a === "Srihari Maruthachalam";
+                return (
+                  <span>
+                    {isMe ? (
+                      <span class="font-medium text-[var(--color-fg)]">{a}</span>
+                    ) : collab ? (
+                      <a
+                        href={collab.url}
+                        target="_blank"
+                        rel="noopener"
+                        class="collab-link"
+                      >
+                        {a}
+                      </a>
+                    ) : (
+                      a
+                    )}
+                    {i < p.authors.length - 1 && ", "}
+                  </span>
+                );
+              })}
             </p>
             <p class="mt-1 text-xs text-[var(--color-fg-dim)]">{p.citation}</p>
             {p.takeaway && (
