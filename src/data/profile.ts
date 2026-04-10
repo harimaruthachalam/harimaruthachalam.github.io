@@ -77,6 +77,15 @@ export const profile = {
   emails: {
     primary: "srihari.m.srihari@gmail.com",
     alumni: "harimaruthachal@alumni.iitm.ac.in",
+    /**
+     * Spam-resistant display versions for the visible page. The real
+     * addresses above remain in profile.emails.primary / .alumni so
+     * machine-readable channels (JSON-LD Person.email, llms.txt,
+     * llms-full.txt) still expose them to LLMs and search engines —
+     * the legitimate consumers there are not spam bots.
+     */
+    primaryDisplay: "srihari [dot] m [dot] srihari [AT] gmail [dot] com",
+    alumniDisplay: "harimaruthachal [AT] alumni [dot] iitm [dot] ac [dot] in",
   },
   socials: [
     {

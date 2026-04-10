@@ -28,18 +28,21 @@ import SocialIcon from "./SocialIcon.astro";
         <p class="text-xs uppercase tracking-wider text-[var(--color-fg-dim)]">
           Email
         </p>
-        <a
-          href={`mailto:${profile.emails.primary}`}
-          class="mt-3 block font-mono text-base text-[var(--color-fg)] underline decoration-[var(--color-accent)]/40 underline-offset-4 transition hover:decoration-[var(--color-accent)]"
+        <p
+          class="mt-3 font-mono text-base text-[var(--color-fg)] select-all"
+          aria-label="Primary email address (obfuscated to deter scrapers)"
         >
-          {profile.emails.primary}
-        </a>
-        <a
-          href={`mailto:${profile.emails.alumni}`}
-          class="mt-1 block font-mono text-sm text-[var(--color-fg-muted)] underline decoration-[var(--color-border-strong)] underline-offset-4 transition hover:text-[var(--color-fg)]"
+          {profile.emails.primaryDisplay}
+        </p>
+        <p
+          class="mt-1 font-mono text-sm text-[var(--color-fg-muted)] select-all"
+          aria-label="Alumni email address (obfuscated to deter scrapers)"
         >
-          {profile.emails.alumni}
-        </a>
+          {profile.emails.alumniDisplay}
+        </p>
+        <p class="mt-3 text-xs italic text-[var(--color-fg-dim)]">
+          Replace <code>[AT]</code> with <code>@</code> and <code>[dot]</code> with <code>.</code>
+        </p>
       </div>
 
       <div>
