@@ -1,12 +1,24 @@
 ---
 import { profile } from "../data/profile";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 
 const year = new Date().getFullYear();
-const updated = new Date().toLocaleDateString("en-GB", {
-  year: "numeric",
-  month: "short",
-  day: "numeric",
-});
+
+// Read the manually-curated `lastUpdated.txt` at build time so the
+// "Updated" line only changes when the user explicitly bumps it,
+// not on every commit. Resolves from the project root (cwd) — works
+// in both `astro dev` and `astro build`. Falls back to today if missing.
+let updated: string;
+try {
+  updated = readFileSync(resolve(process.cwd(), "lastUpdated.txt"), "utf-8").trim();
+} catch {
+  updated = new Date().toLocaleDateString("en-GB", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+}
 ---
 
 <footer class="border-t border-[var(--color-border)]">

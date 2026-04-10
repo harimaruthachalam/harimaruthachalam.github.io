@@ -1,0 +1,82 @@
+---
+/**
+ * Light/dark theme toggle.
+ *
+ * Renders a single button. The actual theme decision happens in the
+ * inline `<script>` block in Base.astro, which runs *before* paint to
+ * avoid a flash of the wrong theme. This component just wires up the
+ * click handler that swaps `data-theme` and persists the choice.
+ *
+ * Visual: a single icon that crossfades between sun (in dark mode) and
+ * moon (in light mode). The icon shown is what you'll switch *to* — a
+ * common convention that makes the action self-explanatory.
+ */
+---
+
+<button
+  id="theme-toggle"
+  type="button"
+  aria-label="Toggle color theme"
+  title="Toggle light / dark theme"
+  class="fixed right-5 top-5 z-50 inline-flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-border)] bg-[var(--color-bg-soft)]/80 text-[var(--color-fg-muted)] backdrop-blur-md transition hover:border-[var(--color-border-strong)] hover:text-[var(--color-fg)] hover:scale-105 active:scale-95"
+>
+  <!-- Sun: shown in DARK mode (click → go to light) -->
+  <svg
+    class="h-[18px] w-[18px] dark:block light:hidden"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <circle cx="12" cy="12" r="4"></circle>
+    <path d="M12 2v2"></path>
+    <path d="M12 20v2"></path>
+    <path d="m4.93 4.93 1.41 1.41"></path>
+    <path d="m17.66 17.66 1.41 1.41"></path>
+    <path d="M2 12h2"></path>
+    <path d="M20 12h2"></path>
+    <path d="m6.34 17.66-1.41 1.41"></path>
+    <path d="m19.07 4.93-1.41 1.41"></path>
+  </svg>
+
+  <!-- Moon: shown in LIGHT mode (click → go to dark) -->
+  <svg
+    class="h-[18px] w-[18px] light:block dark:hidden"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+  </svg>
+</button>
+
+<script is:inline>
+  // Wire the click handler. The initial theme is set in Base.astro's
+  // pre-paint script — this only handles user clicks after first render.
+  (function () {
+    const btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+    btn.addEventListener("click", () => {
+      const root = document.documentElement;
+      const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try {
+        localStorage.setItem("theme", next);
+      } catch (e) {
+        // localStorage may be blocked in private mode — fail silently
+      }
+      // Update meta theme-color to match the new background
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) {
+        meta.setAttribute("content", next === "dark" ? "#0b0b0d" : "#f8f5ee");
+      }
+    });
+  })();
+</script>

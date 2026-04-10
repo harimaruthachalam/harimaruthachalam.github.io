@@ -4,11 +4,11 @@ import SocialIcon from "./SocialIcon.astro";
 ---
 
 <section class="relative overflow-hidden">
-  <!-- subtle radial glow behind the hero, accent-tinted -->
+  <!-- subtle radial glow behind the hero, accent-tinted, theme-aware -->
   <div
     aria-hidden="true"
     class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[60rem]"
-    style="background: radial-gradient(60rem 30rem at 50% 0%, rgba(233,111,58,0.10), transparent 60%);"
+    style="background: var(--hero-glow);"
   >
   </div>
 
