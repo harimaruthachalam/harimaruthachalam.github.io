@@ -86,7 +86,6 @@ export const personSchema = {
     "@type": "Place",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Coimbatore",
       addressCountry: "IN",
     },
   },
@@ -109,10 +108,10 @@ export const personSchema = {
   hasOccupation: {
     "@type": "Occupation",
     name: "Staff Data Scientist",
-    occupationLocation: { "@type": "City", name: "Bangalore" },
+    occupationLocation: { "@type": "City", name: "Bengaluru" },
     skills: knowsAbout.join(", "),
     description:
-      "Designs and ships production machine learning systems — real-time edge inference for fleet safety, healthcare NLP from administrative claims, and brain–computer interfaces from EEG signals.",
+      "Designs and ships production machine learning systems — real-time edge inference for fleet safety, healthcare NLP from administrative claims, and brain–computer interfaces from EEG signals. Most recently Staff Data Scientist at Netradyne, Bengaluru (Jun 2022 – Jun 2025).",
   },
   knowsAbout,
   award: awards.map((a) => `${a.title} — ${a.by} (${a.date})`),

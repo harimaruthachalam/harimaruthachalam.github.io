@@ -33,7 +33,7 @@ export const talks: Talk[] = [
   {
     id: "neuromorphic-2018",
     event: "Neuromorphic Computing Workshop",
-    location: "IISc Bangalore",
+    location: "IISc Bengaluru",
     year: 2018,
   },
   {

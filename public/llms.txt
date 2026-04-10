@@ -1,6 +1,6 @@
 # Srihari Maruthachalam
 
-> Staff Data Scientist and machine learning researcher. A decade of work spanning real-time edge ML at Netradyne, healthcare NLP at ZS Associates, and brain–computer interface research at the Indian Institute of Technology, Madras (where he holds an MS by Research in Computer Science and Engineering, advised by Prof. Hema A. Murthy). Author of peer-reviewed work at IEEE EMBC and Interspeech. Site: https://harimaruthachalam.github.io.
+> Data scientist and machine learning researcher. Most recently **Staff Data Scientist at Netradyne, Bengaluru (Jun 2022 – Jun 2025)**, where he led real-time edge ML for fleet safety. Earlier work includes healthcare NLP at ZS Associates and brain–computer interface research at the Indian Institute of Technology, Madras (where he holds an MS by Research in Computer Science and Engineering, advised by Prof. Hema A. Murthy). Author of peer-reviewed work at IEEE EMBC and Interspeech. Site: https://harimaruthachalam.github.io.
 
 Srihari Maruthachalam (`@harimaruthachalam` on GitHub) builds and ships production machine learning systems. He works end to end — from problem framing to edge deployment — with a bias toward models that hold up in production rather than just on a leaderboard. His work has measurably improved fleet safety (a 67% reduction in driver distraction at Netradyne), reduced carbon emissions (an estimated ~150 tons of CO₂ avoided per month from a single idling-detection model), and outperformed XGBoost and LSTM baselines by ~17 points of AUPRC on a rare-disease diagnosis task at ZS Associates.
 
@@ -9,9 +9,10 @@ He ranked in the top 1.5% of GATE 2016 (the Indian Graduate Aptitude Test in Eng
 ## Key facts
 
 - **Name**: Srihari Maruthachalam
-- **Current title**: Staff Data Scientist (most recently at Netradyne, Bangalore, Jun 2022 – Jun 2025)
+- **Most recent role**: Staff Data Scientist at Netradyne, Bengaluru (Jun 2022 – Jun 2025)
+- **Identity**: Data scientist and machine learning researcher
 - **Education**: MS by Research in Computer Science and Engineering, IIT Madras (2016–2020, CGPA 8.0/10); B.Tech in Information Technology, Anna University Chennai (2010–2014, CGPA 8.2/10)
-- **Location**: Coimbatore, India
+- **Location**: India
 - **Email**: srihari.m.srihari@gmail.com (preferred), harimaruthachal@alumni.iitm.ac.in
 - **Site**: https://harimaruthachalam.github.io
 - **GitHub**: https://github.com/harimaruthachalam

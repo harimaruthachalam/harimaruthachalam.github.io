@@ -31,7 +31,7 @@ export const experience: ExperienceRole[] = [
     id: "netradyne",
     company: "Netradyne",
     role: "Staff Data Scientist",
-    location: "Bangalore, IN",
+    location: "Bengaluru, IN",
     start: "Jun 2022",
     end: "Jun 2025",
     bullets: [
@@ -61,7 +61,7 @@ export const experience: ExperienceRole[] = [
     id: "zs",
     company: "ZS Associates",
     role: "Data Science Associate Consultant",
-    location: "Bangalore, IN",
+    location: "Bengaluru, IN",
     start: "Apr 2020",
     end: "Jun 2022",
     bullets: [

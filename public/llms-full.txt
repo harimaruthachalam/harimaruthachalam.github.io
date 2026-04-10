@@ -4,7 +4,7 @@
 
 ## Identity
 
-**Srihari Maruthachalam** is an applied machine learning engineer, researcher, and Staff Data Scientist based in Coimbatore, India. He has spent more than a decade working at the intersection of academic research and production engineering — three years inside the Indian Institute of Technology Madras (IIT Madras), five years as an applied data scientist across two industry roles (ZS Associates and Netradyne), and an earlier two and a half years as a full-stack software engineer at Cognizant. The throughline of that career is a stubborn preference for systems that *work in production*: real-time, on-device, end-to-end, and measurable in the world.
+**Srihari Maruthachalam** is a data scientist and machine learning researcher based in India. He served most recently as **Staff Data Scientist at Netradyne, Bengaluru**, from June 2022 through June 2025. Across more than a decade he has worked at the intersection of academic research and production engineering — three years inside the Indian Institute of Technology Madras (IIT Madras), five years as an applied data scientist across two industry roles (ZS Associates and Netradyne), and an earlier two and a half years as a full-stack software engineer at Cognizant. The throughline of that career is a stubborn preference for systems that *work in production*: real-time, on-device, end-to-end, and measurable in the world.
 
 He can be reached at **srihari.m.srihari@gmail.com** (preferred) or via his alumni address **harimaruthachal@alumni.iitm.ac.in**. His public links are:
 
@@ -44,7 +44,7 @@ Srihari earned his **Bachelor of Technology in Information Technology** from **A
 
 ## Professional history
 
-### Staff Data Scientist — Netradyne (Bangalore, Jun 2022 – Jun 2025)
+### Staff Data Scientist — Netradyne (Bengaluru, Jun 2022 – Jun 2025)
 
 Netradyne builds AI-powered fleet safety systems. As Staff Data Scientist, Srihari led three production initiatives that each shipped to the in-cabin edge device used across the customer fleet:
 
@@ -54,7 +54,7 @@ Netradyne builds AI-powered fleet safety systems. As Staff Data Scientist, Sriha
 
 Recognition at Netradyne: **Aspire Leadership Programme (Dec 2024)**, **Netradyne Information Security Ambassador / NISA (Oct 2024)**, **Netradyne Dream Team (Dec 2023)**.
 
-### Data Science Associate Consultant — ZS Associates (Bangalore, Apr 2020 – Jun 2022)
+### Data Science Associate Consultant — ZS Associates (Bengaluru, Apr 2020 – Jun 2022)
 
 ZS Associates is a global management consulting firm with a deep practice in healthcare and life sciences. As an Associate Consultant in the Data Science team, Srihari led several modelling efforts on patient-level administrative claims data:
 
@@ -97,7 +97,7 @@ Two and a half years as a full-stack developer on a workflow management system f
 - IEEE Engineering in Medicine and Biology Society (EMBC) 2019, Berlin, Germany
 - Centre for Computational Brain Research 2019, IIT Madras
 - Interspeech 2018, Hyderabad, India
-- Neuromorphic Computing Workshop 2018, IISc Bangalore
+- Neuromorphic Computing Workshop 2018, IISc Bengaluru
 - Centre for Computational Brain Research 2018, IIT Madras
 - Brain Modes 2017, National Brain Research Centre, New Delhi
 
