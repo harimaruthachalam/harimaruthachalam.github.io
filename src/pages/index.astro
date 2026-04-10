@@ -9,36 +9,14 @@ import EducationSkills from "../components/EducationSkills.astro";
 import Recognition from "../components/Recognition.astro";
 import Contact from "../components/Contact.astro";
 import Footer from "../components/Footer.astro";
-import { profile } from "../data/profile";
-
-// JSON-LD: makes Google show a rich card for the name search.
-const personSchema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: profile.name,
-  jobTitle: "Staff Data Scientist",
-  description: profile.about,
-  email: profile.emails.primary,
-  url: "https://harimaruthachalam.github.io",
-  sameAs: profile.socials.map((s) => s.url),
-  alumniOf: [
-    {
-      "@type": "CollegeOrUniversity",
-      name: "Indian Institute of Technology, Madras",
-    },
-    {
-      "@type": "CollegeOrUniversity",
-      name: "Anna University, Chennai",
-    },
-  ],
-};
+import { homepageGraph } from "../data/jsonLd";
 ---
 
 <Base>
   <script
     type="application/ld+json"
     is:inline
-    set:html={JSON.stringify(personSchema)}
+    set:html={JSON.stringify(homepageGraph)}
     slot="head"
   />
 

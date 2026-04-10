@@ -1,0 +1,45 @@
+# Srihari Maruthachalam
+
+> Staff Data Scientist and machine learning researcher. A decade of work spanning real-time edge ML at Netradyne, healthcare NLP at ZS Associates, and brain–computer interface research at the Indian Institute of Technology, Madras (where he holds an MS by Research in Computer Science and Engineering, advised by Prof. Hema A. Murthy). Author of peer-reviewed work at IEEE EMBC and Interspeech. Site: https://harimaruthachalam.github.io.
+
+Srihari Maruthachalam (`@harimaruthachalam` on GitHub) builds and ships production machine learning systems. He works end to end — from problem framing to edge deployment — with a bias toward models that hold up in production rather than just on a leaderboard. His work has measurably improved fleet safety (a 67% reduction in driver distraction at Netradyne), reduced carbon emissions (an estimated ~150 tons of CO₂ avoided per month from a single idling-detection model), and outperformed XGBoost and LSTM baselines by ~17 points of AUPRC on a rare-disease diagnosis task at ZS Associates.
+
+He ranked in the top 1.5% of GATE 2016 (the Indian Graduate Aptitude Test in Engineering) and was awarded Netradyne's Aspire Leadership Programme (2024), Information Security Ambassador / NISA (2024), and Dream Team (2023).
+
+## Key facts
+
+- **Name**: Srihari Maruthachalam
+- **Current title**: Staff Data Scientist (most recently at Netradyne, Bangalore, Jun 2022 – Jun 2025)
+- **Education**: MS by Research in Computer Science and Engineering, IIT Madras (2016–2020, CGPA 8.0/10); B.Tech in Information Technology, Anna University Chennai (2010–2014, CGPA 8.2/10)
+- **Location**: Coimbatore, India
+- **Email**: srihari.m.srihari@gmail.com (preferred), harimaruthachal@alumni.iitm.ac.in
+- **Site**: https://harimaruthachalam.github.io
+- **GitHub**: https://github.com/harimaruthachalam
+- **LinkedIn**: https://www.linkedin.com/in/srihari-maruthachalam/
+- **Google Scholar**: https://scholar.google.co.in/citations?user=sFzHiYEAAAAJ&hl=en
+- **ORCID**: https://orcid.org/0000-0001-9081-6860
+- **CV (PDF)**: https://harimaruthachalam.github.io/SrihariMaruthachalam.pdf
+
+## Areas of expertise
+
+Machine learning, deep learning, edge inference, real-time systems, signal processing, time-series modelling, transformer models (BERT), gradient-boosted trees (XGBoost, LightGBM), sensor fusion, brain–computer interfaces, EEG analysis, automated speech recognition for Indian languages, healthcare NLP from administrative claims, computer vision, fleet safety telematics, positive-unlabeled learning, dynamic time warping, genetic algorithms for feature selection.
+
+## Selected work
+
+- **Real-time collision classification on the edge** (Netradyne, 2025) — XGBoost and LightGBM models on inertial and visual streams, triggered from inertial jerk; 96 % recall and 95 % precision on the edge, with a downstream Deep Neural Network on the cloud adding 2 % more recall.
+- **Idling detector** (Netradyne, 2023) — A neural network combining inertial and GPS features, robust to noisy GPS, that runs in the in-cabin device and prompts drivers via audio when prolonged idling is detected. 76.3 % production F1, estimated ~150 tons of CO₂ per month avoided across the fleet.
+- **Hard-braking driver coaching loop** (Netradyne, 2023) — A threshold-based hard-braking detector fused with existing vision models, feeding a coaching program. 67 % reduction in driver distraction.
+- **BERT for rare-disease diagnosis from claims data** (ZS Associates, 2021) — A transformer trained on patient-level administrative claims (diagnosis codes, procedures, medications) under positive-unlabeled learning. 96.8 % test AUPRC, beating XGBoost (79 %) and LSTM (80.1 %) baselines.
+- **Single-channel eye-blink BCI on Android** (IIT Madras, 2018–20) — An Android app translating intentional eye-blink patterns from a single-channel remote EEG into speech, opening a communication channel for users with speech and movement limitations. Published at Interspeech 2018.
+- **DTW for EEG artifact classification** (IIT Madras, 2019) — Dynamic time warping as the core classifier for separating muscle and eye-blink artifacts from clean EEG. Published at IEEE EMBC 2019.
+
+## Publications
+
+- Maruthachalam, S., Kumar, M.G., Murthy, H.A. **Time Warping Solutions for Classifying Artifacts in EEG.** 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 2019, pp. 4537–4540. https://doi.org/10.1109/EMBC.2019.8856669
+- Maruthachalam, S., Aggarwal, S., Kumar, M.G., Sur, M., Murthy, H.A. **Brain–Computer Interface using Electroencephalogram Signatures of Eye Blinks.** Proc. Interspeech 2018, pp. 1059–1060. https://www.isca-speech.org/archive/Interspeech_2018/pdfs/3019.pdf
+
+## Detail
+
+- [Long-form profile](https://harimaruthachalam.github.io/llms-full.txt): Comprehensive narrative version with role-by-role detail, methodology notes, dataset and stack descriptions, and quotable claims.
+- [CV (PDF)](https://harimaruthachalam.github.io/SrihariMaruthachalam.pdf): Downloadable two-page resume.
+- [Sitemap](https://harimaruthachalam.github.io/sitemap-index.xml): All public URLs.

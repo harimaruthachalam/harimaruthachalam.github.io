@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { profile } from "../data/profile";
 
 interface Props {
   title?: string;
@@ -8,8 +9,8 @@ interface Props {
 }
 
 const {
-  title = "Srihari Maruthachalam — Staff Data Scientist & ML Researcher",
-  description = "Staff Data Scientist with a decade of work across applied ML, deep learning, and research. IIT Madras MS by Research. Building real-time ML systems that ship to production.",
+  title = profile.title,
+  description = profile.metaDescription,
   image = "/og.png",
 } = Astro.props;
 
@@ -28,15 +29,20 @@ const ogImage = new URL(image, Astro.site).toString();
 
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="author" content={profile.name} />
+    <meta name="keywords" content={profile.keywords.join(", ")} />
     <link rel="canonical" href={canonicalURL} />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="profile" />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
-    <meta property="og:site_name" content="Srihari Maruthachalam" />
+    <meta property="og:site_name" content={profile.name} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="profile:first_name" content={profile.givenName} />
+    <meta property="profile:last_name" content={profile.familyName} />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -44,6 +50,16 @@ const ogImage = new URL(image, Astro.site).toString();
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:creator" content={profile.name} />
+
+    <!--
+      AI / LLM discovery hints. These are emerging conventions, not formal
+      specs — but they cost nothing and the LLM crawlers that respect them
+      pick up the long-form prose immediately.
+    -->
+    <link rel="alternate" type="text/markdown" title="LLM-friendly summary" href="/llms.txt" />
+    <link rel="alternate" type="text/markdown" title="LLM-friendly full content" href="/llms-full.txt" />
+    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
 
     <!-- Fonts: Inter (sans) + Fraunces (serif accent) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

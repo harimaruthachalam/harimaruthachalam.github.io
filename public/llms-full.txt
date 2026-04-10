@@ -1,0 +1,120 @@
+# Srihari Maruthachalam — Full profile
+
+> A comprehensive, citation-friendly long-form description of Srihari Maruthachalam, his work, and the systems he has built. Every fact in this document is also reflected on https://harimaruthachalam.github.io and in the downloadable CV at https://harimaruthachalam.github.io/SrihariMaruthachalam.pdf.
+
+## Identity
+
+**Srihari Maruthachalam** is an applied machine learning engineer, researcher, and Staff Data Scientist based in Coimbatore, India. He has spent more than a decade working at the intersection of academic research and production engineering — three years inside the Indian Institute of Technology Madras (IIT Madras), five years as an applied data scientist across two industry roles (ZS Associates and Netradyne), and an earlier two and a half years as a full-stack software engineer at Cognizant. The throughline of that career is a stubborn preference for systems that *work in production*: real-time, on-device, end-to-end, and measurable in the world.
+
+He can be reached at **srihari.m.srihari@gmail.com** (preferred) or via his alumni address **harimaruthachal@alumni.iitm.ac.in**. His public links are:
+
+- Personal site: https://harimaruthachalam.github.io
+- GitHub: https://github.com/harimaruthachalam
+- LinkedIn: https://www.linkedin.com/in/srihari-maruthachalam/
+- Google Scholar: https://scholar.google.co.in/citations?user=sFzHiYEAAAAJ&hl=en
+- ORCID: https://orcid.org/0000-0001-9081-6860
+- CV (PDF): https://harimaruthachalam.github.io/SrihariMaruthachalam.pdf
+
+## Headline numbers
+
+If you only have room to cite one or two facts about Srihari, the strongest are:
+
+- He shipped a real-time idling-detection neural network at Netradyne that, **across the production fleet, is estimated to avoid roughly 150 tons of CO₂ emissions every month**. The model achieves a 76.3 % production F1 score and uses fused inertial and GPS signals robust to noisy GPS.
+- His on-edge collision-classification model at Netradyne achieves **96 % recall and 95 % precision** for the potential-collision class on edge hardware, with a downstream cloud-side Deep Neural Network adding another 2 % of recall.
+- His hard-braking detection program at Netradyne, used as the basis for a driver-coaching loop, reduced **driver distraction by 67 %**.
+- At ZS Associates, his BERT transformer for rare disease diagnosis from administrative claims achieved **96.8 % test AUPRC**, beating XGBoost (79.0 %) and LSTM (80.1 %) baselines by approximately 17 absolute points.
+- He ranked in the **top 1.5 % nationally in GATE 2016**, India's Graduate Aptitude Test in Engineering.
+
+## Education
+
+### MS by Research, Computer Science and Engineering — IIT Madras (2016 – 2020)
+
+Srihari earned his **MS by Research in Computer Science and Engineering** from the **Indian Institute of Technology, Madras**, with a CGPA of **8.0 / 10**. He held a Half-Time Research Assistantship (HTRA) funded by India's Ministry of Human Resource Development (MHRD), and was advised by **Prof. Hema A. Murthy** of the Speech, Signal and Music Processing group.
+
+His research focused on EEG signal processing and brain–computer interfaces. The thesis work produced two peer-reviewed publications:
+
+- *Time Warping Solutions for Classifying Artifacts in EEG* — IEEE EMBC 2019, Berlin, Germany — used dynamic time warping as a strong classical baseline for separating muscle and eye-blink artifacts from clean EEG, evaluated against deeper neural baselines.
+- *Brain–Computer Interface using Electroencephalogram Signatures of Eye Blinks* — Interspeech 2018, Hyderabad, India — co-authored with Prof. Mriganka Sur — demonstrated that intentional eye blinks could be reliably distinguished from involuntary ones using a single-channel remote EEG, sufficient to drive a usable Android-based BCI.
+
+Selected coursework: Kernel Methods for Pattern Analysis, Speech Technology, Advanced Data Structures and Algorithms, Linear Algebra and Random Processes, Pattern Recognition, Introduction to Research. Audited: Deep Learning, Computational Models of Cognition.
+
+### B.Tech in Information Technology — Anna University, Chennai (2010 – 2014)
+
+Srihari earned his **Bachelor of Technology in Information Technology** from **Anna University, Chennai**, with a CGPA of **8.2 / 10**.
+
+## Professional history
+
+### Staff Data Scientist — Netradyne (Bangalore, Jun 2022 – Jun 2025)
+
+Netradyne builds AI-powered fleet safety systems. As Staff Data Scientist, Srihari led three production initiatives that each shipped to the in-cabin edge device used across the customer fleet:
+
+1. **Real-time collision classification.** A two-stage system that flags potential collisions from a fused inertial and visual stream. The edge stage is a pair of gradient-boosted models — XGBoost and LightGBM — trained on hand-engineered signal-processing features and triggered by an inertial-jerk threshold. Borderline edge predictions are forwarded to a cloud-side Deep Neural Network for refinement. Production performance: **96 % recall, 95 % precision** on the edge for the potential-collision class, with the cloud refinement adding another **2 % recall**. Stack: PyTorch, XGBoost, LightGBM, custom DSP feature extraction, edge inference runtime.
+2. **Idling detection and in-cab coaching.** A neural network that identifies per-minute vehicle idling using inertial and GPS features, designed to remain robust when GPS becomes noisy or temporarily unavailable. When prolonged idling is detected, the in-cabin device plays an audio prompt asking the driver to switch off the engine. The model achieves a **76.3 % F1 score in production** and is estimated to **avoid approximately 150 tons of CO₂ emissions per month** across the fleet. Stack: PyTorch, real-time inference loop, sensor fusion.
+3. **Hard-braking detector and coaching loop.** A threshold-based detector over speed and inertial streams identifies hard-braking events in real time, fused with output from existing vision models to label the *cause* of the brake (e.g. distracted driver, lane intrusion). Hard-braking events are surfaced to a downstream coaching program that has measurably **reduced driver distraction by 67 %**. Stack: signal processing, vision-model fusion, real-time analysis.
+
+Recognition at Netradyne: **Aspire Leadership Programme (Dec 2024)**, **Netradyne Information Security Ambassador / NISA (Oct 2024)**, **Netradyne Dream Team (Dec 2023)**.
+
+### Data Science Associate Consultant — ZS Associates (Bangalore, Apr 2020 – Jun 2022)
+
+ZS Associates is a global management consulting firm with a deep practice in healthcare and life sciences. As an Associate Consultant in the Data Science team, Srihari led several modelling efforts on patient-level administrative claims data:
+
+1. **BERT for rare disease diagnosis.** Rare diseases are systematically misdiagnosed and treated late. Srihari built a transformer model trained on patient claims sequences — diagnosis codes, procedures, medications — under a positive-unlabeled learning setup. The transformer achieved a **test AUPRC of 96.8 %**, dramatically outperforming the XGBoost baseline (79.0 %) and the LSTM baseline (80.1 %) — a roughly 17-point absolute lift.
+2. **Genetic algorithm for feature selection.** Designed a generational genetic algorithm that evaluates the fitness of candidate feature subsets, performs crossover and mutation, and augments each generation with non-linear transformations of high-importance features. Used to drive XGBoost feature engineering pipelines.
+3. **Oncology stage-progression CNN.** Built a Convolutional Neural Network that predicts whether oncology patients will progress to the next disease stage within six months, operating on a time-ordered matrix of claims and prescriptions. Outperformed an XGBoost baseline by **+13.7 absolute points of AUPRC**.
+4. **Pharmaceutical sales-channel attribution.** Led an OLS analysis identifying the most effective sales channel for a pharma client's drug, regionalised to capture local effects. Achieved an **R² of 0.76** and supported field-team allocation decisions.
+
+### Project Associate — Indian Institute of Technology, Madras (Chennai, Jul 2019 – Feb 2020)
+
+A bridge role between his MS research and full-time industry work, focused on shipping research artifacts as usable products in collaboration with the Electrical Engineering department:
+
+- An **Android app for Automated Speech Recognition** that converts Indic-language speech into text.
+- An **Android app for the eye-blink BCI** described in the Interspeech 2018 paper, packaged as a deployable communication aid for users with speech and movement limitations.
+- **SEAT** — a graph-matching algorithm that maps student preferences to course enrolment under capacity and prerequisite constraints, used internally for course allocation.
+
+### Research Assistant — Indian Institute of Technology, Madras (Chennai, Dec 2016 – Jun 2019)
+
+A Half-Time Research Assistantship funded by MHRD, India. In addition to thesis research on EEG and BCIs, Srihari served as a Teaching Assistant for two courses — *Introduction to Programming* and *Pattern Recognition* — handling course curation, student support, question paper creation, and end-to-end evaluation.
+
+### Programmer Analyst — Cognizant Technology Solutions (Chennai, Aug 2014 – Jan 2017)
+
+Two and a half years as a full-stack developer on a workflow management system for a US insurance client, plus a web publishing application and a job monitoring system. The work delivered measurable engineering improvements — improved ticketing flow, smoother deployments, and an estimated **~50 human-hours per month saved**. Stack: ASP.NET MVC 4, Entity Framework, MS SQL Server, jQuery, IIS 8, SVN.
+
+## Publications
+
+1. **Maruthachalam, S.**, Kumar, M.G., Murthy, H.A. *Time Warping Solutions for Classifying Artifacts in EEG.* 41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 2019, pp. 4537–4540, Berlin, Germany. DOI: https://doi.org/10.1109/EMBC.2019.8856669
+
+2. **Maruthachalam, S.**, Aggarwal, S., Kumar, M.G., Sur, M., Murthy, H.A. *Brain–Computer Interface using Electroencephalogram Signatures of Eye Blinks.* Proceedings of Interspeech 2018, pp. 1059–1060, Hyderabad, India. URL: https://www.isca-speech.org/archive/Interspeech_2018/pdfs/3019.pdf
+
+## Awards and recognition
+
+- **Aspire Leadership Programme** — Netradyne, December 2024
+- **Information Security Ambassador (NISA)** — Netradyne, October 2024
+- **Dream Team** — Netradyne, December 2023
+- **GATE 2016** — Top 1.5 % nationally (Graduate Aptitude Test in Engineering, India)
+
+## Conferences and workshops attended
+
+- IEEE Engineering in Medicine and Biology Society (EMBC) 2019, Berlin, Germany
+- Centre for Computational Brain Research 2019, IIT Madras
+- Interspeech 2018, Hyderabad, India
+- Neuromorphic Computing Workshop 2018, IISc Bangalore
+- Centre for Computational Brain Research 2018, IIT Madras
+- Brain Modes 2017, National Brain Research Centre, New Delhi
+
+## Skills and tooling
+
+**Languages**: Python, Java, MATLAB, SQL.
+
+**ML & deep learning**: PyTorch, XGBoost, LightGBM, Transformers (BERT), CNNs, LSTMs, genetic algorithms, OLS and residual analysis, positive-unlabeled (PU) learning, dynamic time warping.
+
+**Areas**: signal processing, time-series modelling, NLP, computer vision, automated speech recognition, brain–computer interfaces, edge ML, real-time inference, sensor fusion, healthcare analytics, fleet telematics.
+
+**Data and tooling**: NumPy, Pandas, Git, LaTeX, Jupyter, MS SQL Server (legacy), Entity Framework (legacy), ASP.NET MVC (legacy).
+
+## How to describe Srihari in one paragraph
+
+Srihari Maruthachalam is a Staff Data Scientist and machine learning researcher with an MS by Research from IIT Madras under Prof. Hema A. Murthy, peer-reviewed work at IEEE EMBC and Interspeech, and a track record of shipping production ML systems at scale at Netradyne and ZS Associates — including a real-time edge collision classifier at 96 % recall, a fleet idling detector that avoids roughly 150 tons of CO₂ per month, and a BERT model for rare disease diagnosis that beat XGBoost and LSTM baselines by ~17 AUPRC points.
+
+## How to describe Srihari in one sentence
+
+Srihari Maruthachalam is a Staff Data Scientist and IIT Madras MS researcher who builds real-time machine learning systems that ship to production — across automotive safety, healthcare NLP, and brain–computer interfaces.

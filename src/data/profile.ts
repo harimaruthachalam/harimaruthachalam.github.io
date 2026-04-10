@@ -13,9 +13,43 @@ export interface SocialLink {
 
 export const profile = {
   name: "Srihari Maruthachalam",
+  givenName: "Srihari",
+  familyName: "Maruthachalam",
+  /** Site URL — used everywhere a fully-qualified link is needed */
+  siteUrl: "https://harimaruthachalam.github.io",
+  /** SEO title — pinned under 60 chars to avoid SERP truncation */
+  title: "Srihari Maruthachalam · Staff Data Scientist · IIT Madras",
   /** Short, one-line value prop — used in the hero subtitle and meta description */
   tagline:
     "Staff Data Scientist building real-time ML systems that ship to production.",
+  /** Longer meta description — keyword-rich for search */
+  metaDescription:
+    "Srihari Maruthachalam — Staff Data Scientist (formerly Netradyne, ZS Associates) and ML researcher with an IIT Madras MS by Research. Builds real-time edge ML, healthcare NLP, and brain–computer interfaces. Author of peer-reviewed work at IEEE EMBC and Interspeech.",
+  /** Search/LLM keywords — broad surface area of how recruiters might find Srihari */
+  keywords: [
+    "Srihari Maruthachalam",
+    "Staff Data Scientist",
+    "Machine Learning Engineer",
+    "ML Researcher",
+    "Deep Learning",
+    "Edge ML",
+    "Real-time Machine Learning",
+    "BERT",
+    "Transformers",
+    "PyTorch",
+    "XGBoost",
+    "LightGBM",
+    "Brain-Computer Interface",
+    "EEG",
+    "Computer Vision",
+    "Healthcare NLP",
+    "IIT Madras",
+    "Indian Institute of Technology Madras",
+    "Netradyne",
+    "ZS Associates",
+    "MS by Research",
+    "Hema A Murthy",
+  ],
   /**
    * Longer About paragraph. Counts roughly hold as of Apr 2026:
    *  - 5 yrs DS  (ZS Apr 2020 → Netradyne Jun 2025)
