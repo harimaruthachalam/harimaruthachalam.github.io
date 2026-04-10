@@ -1,0 +1,29 @@
+---
+import { profile } from "../data/profile";
+
+const year = new Date().getFullYear();
+const updated = new Date().toLocaleDateString("en-GB", {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+});
+---
+
+<footer class="border-t border-[var(--color-border)]">
+  <div
+    class="mx-auto flex max-w-5xl flex-col items-start justify-between gap-3 px-6 py-10 text-xs text-[var(--color-fg-dim)] sm:flex-row sm:items-center"
+  >
+    <p>© {year} {profile.name}. All rights reserved.</p>
+    <p>
+      Updated {updated} · Built with
+      <a
+        href="https://astro.build"
+        target="_blank"
+        rel="noopener"
+        class="text-[var(--color-fg-muted)] underline underline-offset-4 transition hover:text-[var(--color-fg)]"
+      >
+        Astro
+      </a>
+    </p>
+  </div>
+</footer>

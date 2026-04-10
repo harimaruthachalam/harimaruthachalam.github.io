@@ -1,0 +1,85 @@
+---
+import { education } from "../data/education";
+import { skillGroups } from "../data/skills";
+---
+
+<section
+  id="education"
+  class="border-t border-[var(--color-border)] bg-[var(--color-bg-soft)]"
+>
+  <div class="mx-auto max-w-5xl px-6 py-24 sm:py-32">
+    <div class="grid gap-16 lg:grid-cols-2">
+      <!-- Education -->
+      <div>
+        <p class="text-xs uppercase tracking-[0.22em] text-[var(--color-fg-dim)]">
+          Education
+        </p>
+        <h2
+          class="mt-3 font-serif text-4xl leading-tight tracking-tight"
+          style="font-family: var(--font-serif);"
+        >
+          Trained in research.
+        </h2>
+
+        <ol class="mt-10 space-y-10">
+          {
+            education.map((e) => (
+              <li>
+                <p class="font-mono text-xs uppercase tracking-wider text-[var(--color-fg-dim)]">
+                  {e.start} — {e.end}
+                  {e.grade && <span class="ml-3 text-[var(--color-accent-soft)]">{e.grade}</span>}
+                </p>
+                <h3
+                  class="mt-2 font-serif text-xl leading-snug text-[var(--color-fg)]"
+                  style="font-family: var(--font-serif);"
+                >
+                  {e.degree} in {e.field}
+                </h3>
+                <p class="text-sm text-[var(--color-fg-muted)]">{e.institution}</p>
+                {e.notes && (
+                  <p class="mt-3 max-w-md text-sm text-[var(--color-fg-muted)]">
+                    {e.notes}
+                  </p>
+                )}
+              </li>
+            ))
+          }
+        </ol>
+      </div>
+
+      <!-- Skills -->
+      <div>
+        <p class="text-xs uppercase tracking-[0.22em] text-[var(--color-fg-dim)]">
+          Skills
+        </p>
+        <h2
+          class="mt-3 font-serif text-4xl leading-tight tracking-tight"
+          style="font-family: var(--font-serif);"
+        >
+          The toolkit.
+        </h2>
+
+        <dl class="mt-10 space-y-8">
+          {
+            skillGroups.map((g) => (
+              <div>
+                <dt class="text-xs uppercase tracking-wider text-[var(--color-fg-dim)]">
+                  {g.label}
+                </dt>
+                <dd class="mt-3">
+                  <ul class="flex flex-wrap gap-2">
+                    {g.items.map((item) => (
+                      <li class="rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-3 py-1 text-sm text-[var(--color-fg-muted)]">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>

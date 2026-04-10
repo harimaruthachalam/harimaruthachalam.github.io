@@ -1,0 +1,79 @@
+---
+import { experience } from "../data/experience";
+---
+
+<section
+  id="experience"
+  class="border-t border-[var(--color-border)] bg-[var(--color-bg-soft)]"
+>
+  <div class="mx-auto max-w-5xl px-6 py-24 sm:py-32">
+    <p class="text-xs uppercase tracking-[0.22em] text-[var(--color-fg-dim)]">
+      Experience
+    </p>
+    <h2
+      class="mt-3 max-w-2xl font-serif text-4xl leading-tight tracking-tight sm:text-5xl"
+      style="font-family: var(--font-serif);"
+    >
+      A decade across <span class="italic text-[var(--color-fg-muted)]">research, applied ML, and shipping software.</span>
+    </h2>
+
+    <ol class="mt-16 space-y-16">
+      {
+        experience.map((role) => (
+          <li class="grid grid-cols-12 gap-6">
+            <div class="col-span-12 sm:col-span-3">
+              <p class="font-mono text-xs uppercase tracking-wider text-[var(--color-fg-dim)]">
+                {role.start} — {role.end}
+              </p>
+              <p class="mt-2 text-xs text-[var(--color-fg-dim)]">
+                {role.location}
+              </p>
+            </div>
+
+            <div class="col-span-12 sm:col-span-9">
+              <h3
+                class="font-serif text-2xl leading-snug text-[var(--color-fg)]"
+                style="font-family: var(--font-serif);"
+              >
+                {role.role}
+                <span class="text-[var(--color-fg-muted)]"> · {role.company}</span>
+              </h3>
+
+              <ul class="mt-5 space-y-5">
+                {role.bullets.map((b) => (
+                  <li>
+                    <p class="text-[var(--color-fg-muted)]">{b.text}</p>
+                    {b.metric && (
+                      <p class="mt-2 inline-block rounded border border-[var(--color-accent)]/30 bg-[var(--color-accent-bg)] px-2.5 py-1 text-xs text-[var(--color-accent-soft)]">
+                        {b.metric}
+                      </p>
+                    )}
+                    {b.tags && b.tags.length > 0 && (
+                      <ul class="mt-2 flex flex-wrap gap-1.5">
+                        {b.tags.map((t) => (
+                          <li class="rounded-full border border-[var(--color-border)] bg-[var(--color-bg-elev)] px-2.5 py-0.5 text-[10px] uppercase tracking-wider text-[var(--color-fg-dim)]">
+                            {t}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
+
+              {role.highlights && role.highlights.length > 0 && (
+                <ul class="mt-6 flex flex-wrap gap-2 border-t border-[var(--color-border)] pt-5">
+                  {role.highlights.map((h) => (
+                    <li class="rounded-full border border-[var(--color-border-strong)] bg-transparent px-3 py-1 text-xs text-[var(--color-fg-muted)]">
+                      ★ {h}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>

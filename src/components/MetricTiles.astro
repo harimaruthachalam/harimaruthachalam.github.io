@@ -1,0 +1,56 @@
+---
+/**
+ * Three headline numbers that change the first impression of the page
+ * from "online resume" to "shipped real things". All from the Netradyne
+ * Staff DS role for narrative cohesion.
+ */
+const tiles = [
+  {
+    value: "96%",
+    unit: "recall",
+    label: "Real-time collision classification",
+    note: "On-edge XGB / LightGBM, +2% lift from cloud refinement",
+  },
+  {
+    value: "~150",
+    unit: "tons CO₂ / month",
+    label: "Idling avoided across the fleet",
+    note: "Production NN with in-cabin audio coaching",
+  },
+  {
+    value: "67%",
+    unit: "↓ distraction",
+    label: "Hard-braking coaching loop",
+    note: "Threshold + vision pipeline driving driver feedback",
+  },
+];
+---
+
+<section class="border-y border-[var(--color-border)] bg-[var(--color-bg-soft)]">
+  <div class="mx-auto max-w-5xl px-6 py-16">
+    <p class="text-xs uppercase tracking-[0.22em] text-[var(--color-fg-dim)]">
+      Things that shipped
+    </p>
+    <div class="mt-8 grid gap-px overflow-hidden rounded-lg border border-[var(--color-border)] bg-[var(--color-border)] sm:grid-cols-3">
+      {
+        tiles.map((t) => (
+          <div class="bg-[var(--color-bg)] p-8">
+            <p
+              class="font-serif text-5xl leading-none tracking-tight text-[var(--color-accent)] sm:text-6xl"
+              style="font-family: var(--font-serif);"
+            >
+              {t.value}
+            </p>
+            <p class="mt-2 text-sm font-medium text-[var(--color-fg)]">
+              {t.unit}
+            </p>
+            <p class="mt-4 text-sm font-medium text-[var(--color-fg)]">
+              {t.label}
+            </p>
+            <p class="mt-1 text-xs text-[var(--color-fg-dim)]">{t.note}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

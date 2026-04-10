@@ -1,0 +1,72 @@
+---
+import { profile } from "../data/profile";
+import SocialIcon from "./SocialIcon.astro";
+---
+
+<section class="relative overflow-hidden">
+  <!-- subtle radial glow behind the hero, accent-tinted -->
+  <div
+    aria-hidden="true"
+    class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[60rem]"
+    style="background: radial-gradient(60rem 30rem at 50% 0%, rgba(233,111,58,0.10), transparent 60%);"
+  >
+  </div>
+
+  <div class="mx-auto max-w-5xl px-6 pt-32 pb-24 sm:pt-40 sm:pb-32">
+    <p
+      class="text-xs uppercase tracking-[0.22em] text-[var(--color-fg-dim)]"
+    >
+      {profile.location} · {profile.credential}
+    </p>
+
+    <h1
+      class="mt-6 font-serif text-5xl leading-[1.02] tracking-[-0.01em] sm:text-7xl"
+      style="font-family: var(--font-serif);"
+    >
+      Srihari<br />
+      <span class="text-[var(--color-accent)]">Maruthachalam.</span>
+    </h1>
+
+    <p
+      class="mt-8 max-w-2xl text-lg leading-relaxed text-[var(--color-fg-muted)] sm:text-xl"
+    >
+      {profile.tagline}
+    </p>
+
+    <div class="mt-10 flex flex-wrap items-center gap-4">
+      <a
+        href={profile.resumePdf}
+        class="group inline-flex items-center gap-2 rounded-md bg-[var(--color-accent)] px-5 py-2.5 text-sm font-medium text-[var(--color-bg)] transition hover:brightness-110"
+        target="_blank"
+        rel="noopener"
+      >
+        Download CV
+        <span aria-hidden="true" class="transition group-hover:translate-x-0.5">→</span>
+      </a>
+      <a
+        href={`mailto:${profile.emails.primary}`}
+        class="inline-flex items-center gap-2 rounded-md border border-[var(--color-border)] px-5 py-2.5 text-sm font-medium text-[var(--color-fg)] transition hover:border-[var(--color-border-strong)] hover:bg-[var(--color-bg-soft)]"
+      >
+        Get in touch
+      </a>
+
+      <ul class="ml-2 flex items-center gap-4">
+        {
+          profile.socials.map((s) => (
+            <li>
+              <a
+                href={s.url}
+                target="_blank"
+                rel="noopener"
+                aria-label={s.label}
+                class="text-[var(--color-fg-dim)] transition hover:text-[var(--color-fg)]"
+              >
+                <SocialIcon name={s.icon} />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>

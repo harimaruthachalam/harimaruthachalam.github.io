@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — dark default with a single warm accent.
+ * Tailwind v4: define theme variables here, no tailwind.config.js needed.
+ */
+@theme {
+  /* Surfaces */
+  --color-bg:        #0b0b0d;
+  --color-bg-soft:   #141418;
+  --color-bg-elev:   #1c1c21;
+  --color-border:    #26262d;
+  --color-border-strong: #3a3a44;
+
+  /* Text */
+  --color-fg:        #ece9e3;
+  --color-fg-muted:  #9b978f;
+  --color-fg-dim:    #6b6862;
+
+  /* Single accent — warm, distinctive, paper-ink contrast */
+  --color-accent:        #e96f3a;
+  --color-accent-soft:   #f3a07a;
+  --color-accent-bg:     rgba(233, 111, 58, 0.12);
+
+  /* Type */
+  --font-sans:    "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif:   "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+/*
+ * Base typography & layout
+ */
+html {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-feature-settings: "ss01", "cv11";
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* Subtle focus ring — accessible without being shouty */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
