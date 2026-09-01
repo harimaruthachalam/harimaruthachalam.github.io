@@ -1,6 +1,6 @@
 # Srihari Maruthachalam
 
-> Data scientist and machine learning researcher. Most recently **Staff Data Scientist at Netradyne, Bengaluru (Jun 2022 – Jun 2025)**, where he led real-time edge ML for fleet safety. Earlier work includes healthcare NLP at ZS Associates and brain–computer interface research at the Indian Institute of Technology, Madras (where he holds an MS by Research in Computer Science and Engineering, advised by [Prof. Hema A. Murthy](https://www.cse.iitm.ac.in/~hema/)). Author of peer-reviewed work at IEEE EMBC and Interspeech. Site: https://harimaruthachalam.github.io.
+> Machine learning leader, data scientist, and researcher. Currently **Chief Technology Officer at Qumin.ai, Bengaluru (since Mar 2026)**, where he leads two agentic AI products built on a custom LLM orchestration engine. Previously **Staff Data Scientist at Netradyne, Bengaluru (Jun 2022 – Jun 2025)**, where he led real-time edge ML for fleet safety. Earlier work includes healthcare NLP at ZS Associates and brain–computer interface research at the Indian Institute of Technology, Madras (where he holds an MS by Research in Computer Science and Engineering, advised by [Prof. Hema A. Murthy](https://www.cse.iitm.ac.in/~hema/)). Author of peer-reviewed work at IEEE EMBC and Interspeech. Site: https://harimaruthachalam.github.io.
 
 Srihari Maruthachalam (`@harimaruthachalam` on GitHub) builds and ships production machine learning systems. He works end to end — from problem framing to edge deployment — with a bias toward models that hold up in production rather than just on a leaderboard. His work has measurably improved fleet safety (a 67% reduction in driver distraction at Netradyne), reduced carbon emissions (an estimated ~150 tons of CO₂ avoided per month from a single idling-detection model), and outperformed XGBoost and LSTM baselines by ~17 points of AUPRC on a rare-disease diagnosis task at ZS Associates.
 
@@ -9,8 +9,9 @@ He ranked in the top 1.5% of GATE 2016 (the Indian Graduate Aptitude Test in Eng
 ## Key facts
 
 - **Name**: Srihari Maruthachalam
-- **Most recent role**: Staff Data Scientist at Netradyne, Bengaluru (Jun 2022 – Jun 2025)
-- **Identity**: Data scientist and machine learning researcher
+- **Current role**: Chief Technology Officer at Qumin.ai, Bengaluru (Mar 2026 – present)
+- **Previous role**: Staff Data Scientist at Netradyne, Bengaluru (Jun 2022 – Jun 2025)
+- **Identity**: Machine learning leader, data scientist, and machine learning researcher
 - **Education**: MS by Research in Computer Science and Engineering, IIT Madras (2016–2020, CGPA 8.0/10); B.Tech in Information Technology, Anna University Chennai (2010–2014, CGPA 8.2/10)
 - **Location**: India
 - **Email**: srihari.m.srihari@gmail.com (preferred), harimaruthachal@alumni.iitm.ac.in
@@ -23,10 +24,12 @@ He ranked in the top 1.5% of GATE 2016 (the Indian Graduate Aptitude Test in Eng
 
 ## Areas of expertise
 
-Machine learning, deep learning, edge inference, real-time systems, signal processing, time-series modelling, transformer models (BERT), gradient-boosted trees (XGBoost, LightGBM), sensor fusion, brain–computer interfaces, EEG analysis, automated speech recognition for Indian languages, healthcare NLP from administrative claims, computer vision, fleet safety telematics, positive-unlabeled learning, dynamic time warping, genetic algorithms for feature selection.
+Agentic AI, LLM agents and custom agent orchestration, autonomous end-to-end testing, machine learning, deep learning, edge inference, real-time systems, signal processing, time-series modelling, transformer models (BERT), gradient-boosted trees (XGBoost, LightGBM), sensor fusion, brain–computer interfaces, EEG analysis, automated speech recognition for Indian languages, healthcare NLP from administrative claims, computer vision, fleet safety telematics, positive-unlabeled learning, dynamic time warping, genetic algorithms for feature selection.
 
 ## Selected work
 
+- **Agentic no-code QA platform** (Qumin.ai, 2026) — A custom agent orchestration engine, built without off-the-shelf agent frameworks, in which an LLM plans and executes user journeys through a Playwright execution layer while a vision + OCR pipeline reads the rendered UI like a human, keeping tests resilient to DOM and layout changes. Plain-English test cases become autonomous end-to-end tests. Engineered to run reliably on Gemini 3.1 Flash Lite for frontier-grade test accuracy at a fraction of typical inference cost — the platform's core technical moat. Deployed on AWS, with a companion Android QA platform. https://nocode.qumin.ai
+- **Chat-first sales prospecting with autonomous research agents** (Qumin.ai, 2026) — A natural-language prompt becomes an explicit ideal customer profile (ICP); autonomous research agents then mine the open web for buying signals (funding, hiring, technology adoption), enrich and cross-verify contacts with confidence scores, and stream source-backed evidence into a live human-in-the-loop workspace, on the same custom orchestration stack. https://qumin.ai
 - **Real-time collision classification on the edge** (Netradyne, 2025) — XGBoost and LightGBM models on inertial and visual streams, triggered from inertial jerk; 96 % recall and 95 % precision on the edge, with a downstream Deep Neural Network on the cloud adding 2 % more recall.
 - **Idling detector** (Netradyne, 2023) — A neural network combining inertial and GPS features, robust to noisy GPS, that runs in the in-cabin device and prompts drivers via audio when prolonged idling is detected. 76.3 % production F1, estimated ~150 tons of CO₂ per month avoided across the fleet.
 - **Hard-braking driver coaching loop** (Netradyne, 2023) — A threshold-based hard-braking detector fused with existing vision models, feeding a coaching program. 67 % reduction in driver distraction.

@@ -61,6 +61,13 @@ const employmentHistory = experience.map((r) => ({
   },
 }));
 
+/** Current employer — the single Organization a crawler should attach to the Person */
+const currentEmployer = {
+  "@type": "Organization",
+  name: "Qumin.ai",
+  url: "https://qumin.ai",
+};
+
 const educationCredentials = education.map((e) => ({
   "@type": "EducationalOccupationalCredential",
   credentialCategory: e.degree,
@@ -81,7 +88,7 @@ export const personSchema = {
   name: profile.name,
   givenName: profile.givenName,
   familyName: profile.familyName,
-  jobTitle: "Staff Data Scientist",
+  jobTitle: "Chief Technology Officer",
   description: profile.longBio,
   disambiguatingDescription: profile.about,
   email: `mailto:${profile.emails.primary}`,
@@ -97,6 +104,7 @@ export const personSchema = {
     },
   },
   sameAs: profile.socials.map((s) => s.url),
+  worksFor: currentEmployer,
   alumniOf: [
     {
       "@type": "CollegeOrUniversity",
@@ -114,11 +122,11 @@ export const personSchema = {
   hasCredential: educationCredentials,
   hasOccupation: {
     "@type": "Occupation",
-    name: "Staff Data Scientist",
+    name: "Chief Technology Officer",
     occupationLocation: { "@type": "City", name: "Bengaluru" },
     skills: knowsAbout.join(", "),
     description:
-      "Designs and ships production machine learning systems — real-time edge inference for fleet safety, healthcare NLP from administrative claims, and brain–computer interfaces from EEG signals. Most recently Staff Data Scientist at Netradyne, Bengaluru (Jun 2022 – Jun 2025).",
+      "Leads the technology organisation at Qumin.ai (Bengaluru, since Mar 2026), building agentic AI products on a custom LLM orchestration engine — autonomous end-to-end testing with vision and OCR, and chat-first sales prospecting. Previously designed and shipped production machine learning systems — real-time edge inference for fleet safety as Staff Data Scientist at Netradyne (Jun 2022 – Jun 2025), healthcare NLP from administrative claims at ZS Associates, and brain–computer interfaces from EEG signals at IIT Madras.",
   },
   knowsAbout,
   award: awards.map((a) => `${a.title} — ${a.by} (${a.date})`),
