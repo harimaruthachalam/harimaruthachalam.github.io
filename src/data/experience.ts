@@ -28,6 +28,33 @@ export interface ExperienceRole {
 
 export const experience: ExperienceRole[] = [
   {
+    id: "qumin",
+    company: "Qumin.ai",
+    role: "Chief Technology Officer",
+    location: "Bengaluru, IN",
+    start: "Mar 2026",
+    end: "Present",
+    bullets: [
+      {
+        text: "Lead the technology organisation for two agentic AI products — a team of four engineers — owning architecture, ML strategy, infrastructure, and delivery end to end.",
+        tags: ["Technical Leadership", "ML Strategy", "Architecture"],
+      },
+      {
+        text: "Drive an AI-powered no-code QA platform that turns plain-English test cases into autonomous end-to-end tests. A custom agent orchestration engine — no off-the-shelf frameworks — has an LLM plan and execute user journeys through a Playwright execution layer, while a vision and OCR pipeline reads the rendered UI the way a human does, keeping tests resilient to DOM and layout changes. The whole agent loop is engineered to run reliably on Gemini 3.1 Flash Lite, which is the platform's core technical moat.",
+        metric: "Frontier-grade test accuracy at a fraction of typical inference cost",
+        tags: ["LLM Agents", "Custom Orchestration", "Computer Vision", "OCR", "Playwright", "AWS"],
+      },
+      {
+        text: "Architected the Android QA platform, extending the same agentic testing approach from the browser to mobile.",
+        tags: ["Android", "Agentic Testing", "Mobile"],
+      },
+      {
+        text: "Expanded the company into chat-first sales prospecting: a natural-language prompt becomes an explicit ICP, after which autonomous research agents mine the open web for buying signals — funding, hiring, tech adoption — enrich and cross-verify contacts with confidence scores, and stream source-backed evidence into a live human-in-the-loop workspace, all on the same custom orchestration stack.",
+        tags: ["Agentic Workflows", "Web-scale Data Extraction", "Entity Resolution", "Ranking & Scoring"],
+      },
+    ],
+  },
+  {
     id: "netradyne",
     company: "Netradyne",
     role: "Staff Data Scientist",

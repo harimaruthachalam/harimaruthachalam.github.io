@@ -18,16 +18,26 @@ export const profile = {
   /** Site URL — used everywhere a fully-qualified link is needed */
   siteUrl: "https://harimaruthachalam.github.io",
   /** SEO title — pinned under 60 chars to avoid SERP truncation */
-  title: "Srihari Maruthachalam · Staff Data Scientist · IIT Madras",
+  title: "Srihari Maruthachalam · CTO at Qumin.ai · IIT Madras",
   /** Short, one-line value prop — used in the hero subtitle and meta description */
   tagline:
-    "Data scientist and researcher. Most recently Staff Data Scientist at Netradyne (2022–2025).",
+    "CTO at Qumin.ai, building agentic AI products. Data scientist and researcher; previously Staff Data Scientist at Netradyne (2022–2025).",
   /** Longer meta description — keyword-rich for search */
   metaDescription:
-    "Srihari Maruthachalam — data scientist and researcher with an IIT Madras MS by Research. Most recently Staff Data Scientist at Netradyne (Jun 2022 – Jun 2025); previously Data Science Associate Consultant at ZS Associates. Built real-time edge ML for fleet safety, healthcare NLP from administrative claims, and brain–computer interfaces. Author of peer-reviewed work at IEEE EMBC and Interspeech.",
+    "Srihari Maruthachalam — Chief Technology Officer at Qumin.ai and hands-on machine learning leader with an IIT Madras MS by Research. Builds agentic AI products: custom LLM orchestration, computer vision, and autonomous testing. Previously Staff Data Scientist at Netradyne (Jun 2022 – Jun 2025) and Data Science Associate Consultant at ZS Associates. Built real-time edge ML for fleet safety, healthcare NLP from administrative claims, and brain–computer interfaces. Author of peer-reviewed work at IEEE EMBC and Interspeech.",
   /** Search/LLM keywords — broad surface area of how recruiters might find Srihari */
   keywords: [
     "Srihari Maruthachalam",
+    "Chief Technology Officer",
+    "CTO",
+    "Qumin",
+    "Qumin.ai",
+    "Agentic AI",
+    "LLM Agents",
+    "Agent Orchestration",
+    "Autonomous Testing",
+    "No-code QA",
+    "Playwright",
     "Staff Data Scientist",
     "Machine Learning Engineer",
     "ML Researcher",

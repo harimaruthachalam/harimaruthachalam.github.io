@@ -29,6 +29,34 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "qumin-nocode-qa",
+    name: "Agentic no-code QA that reads the UI like a human",
+    context: "Qumin.ai",
+    year: "2026",
+    problem:
+      "End-to-end test suites break every time the DOM or layout shifts, and writing them requires engineers who could be building product instead.",
+    solution:
+      "A custom agent orchestration engine — no off-the-shelf frameworks — where an LLM plans and executes user journeys through a Playwright execution layer, while a vision and OCR pipeline interprets the rendered UI rather than the DOM. Plain-English test cases in, autonomous end-to-end runs out. Deployed on AWS, with a companion Android platform extending the same approach to mobile.",
+    outcome:
+      "Frontier-grade test accuracy on Gemini 3.1 Flash Lite — a fraction of typical inference cost, and the platform's core technical moat.",
+    stack: ["LLM Agents", "Custom Orchestration", "Computer Vision", "OCR", "Playwright", "AWS"],
+    link: { label: "nocode.qumin.ai", url: "https://nocode.qumin.ai" },
+  },
+  {
+    id: "qumin-prospecting",
+    name: "Chat-first prospecting with autonomous research agents",
+    context: "Qumin.ai",
+    year: "2026",
+    problem:
+      "Sales teams describe their ideal customer in a sentence, then spend weeks manually turning that sentence into a verified, evidence-backed list.",
+    solution:
+      "A natural-language prompt is converted into an explicit ICP, after which autonomous research agents mine the open web for buying signals — funding, hiring, tech adoption — enrich and cross-verify contacts with confidence scores, and stream source-backed evidence into a live human-in-the-loop workspace. Built on the same custom orchestration stack as the QA platform.",
+    outcome:
+      "Source-backed prospect lists produced from a single prompt, with every claim traceable to its evidence.",
+    stack: ["Agentic Workflows", "Web-scale Data Extraction", "Entity Resolution", "Ranking & Scoring"],
+    link: { label: "qumin.ai", url: "https://qumin.ai" },
+  },
+  {
     id: "edge-collision",
     name: "Real-time collision classification on the edge",
     context: "Netradyne",
